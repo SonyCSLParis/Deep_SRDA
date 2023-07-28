@@ -209,11 +209,3 @@ class StreamingRDA(nn.Module):
         self.Sigma = d["Sigma"].to(self.device)
         self.num_updates = d["num_updates"].to(self.device)
     
-    def change_alpha(self,a):
-        """Function for changing alpha. This is mainly used in hyperparameter tuning.
-
-        Args:
-            a (float): new alpha value.
-        """
-        self.alpha=a
-        self.prev_num_updates=torch.zeros(self.num_classes).to(device=self.device)

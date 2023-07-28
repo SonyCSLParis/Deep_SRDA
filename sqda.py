@@ -9,7 +9,7 @@ class StreamingQDA(nn.Module):
     """
 
     def __init__(self, input_size, num_classes, test_batch_size=128, shrinkage_param=1e-4,
-                 streaming_update_sigma=True):
+                 streaming_update_sigma=True,device=torch.device('cuda')):
         """Init function for the SQDA model
 
         Args:
@@ -19,10 +19,11 @@ class StreamingQDA(nn.Module):
             shrinkage_param (_type_, optional): value of the shrinkage parameter for inversing the covariance matrix. Defaults to 1e-4.
             streaming_update_sigma (bool, optional): True if sigma is plastic else False
             feature extraction in `self.feature_extraction_wrapper`. Defaults to True.
+            device (torch.device): Torch device used by the module. Defaults to torch.device('cuda').
         """
         super(StreamingQDA, self).__init__()
 
-        self.device=torch.device('cuda')
+        self.device=device
         self.num_classes=num_classes
 
         # SQDA parameters
