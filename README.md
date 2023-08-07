@@ -1,6 +1,6 @@
-# Deep_SRDA
+# Deep Streaming Regularized Discriminant Analysi
 
-A Pytorch implementation of our Deep Streaming Regularized Discriminant Analysis algorithm from our [published paper]() (ICCV 2023).
+A Pytorch implementation of our Deep Streaming Regularized Discriminant Analysis (Deep SRDA) algorithm from our [published paper]() (ICCV 2023).
 
 Deep SRDA is a generative classification method that combines Quadratic Discriminant Analysis (QDA) and Linear Discriminant Analysis (LDA)
 through a regularizing parameter. Combined with a feature extractor, this method can be used as the final layer of CNN to enable Online Continual Learning with a batch size of 1.
