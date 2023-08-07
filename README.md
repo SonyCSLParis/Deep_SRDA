@@ -1,4 +1,4 @@
-# Deep Streaming Regularized Discriminant Analysi
+# Deep Streaming Regularized Discriminant Analysis
 
 A Pytorch implementation of our Deep Streaming Regularized Discriminant Analysis (Deep SRDA) algorithm from our [published paper]() (ICCV 2023).
 
